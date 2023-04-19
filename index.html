@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1_gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+            /* css reset  */
+        *{    
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            color: white;
+            background: url('img/gym2.jpg');
+            background-size: contain;
+             background-repeat: no-repeat; 
+            background-position: center ;
+            height:140vh;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .left{
+            position: absolute;
+            left: 34px;
+            top: 18px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        .left img{
+            width: 30px;
+            filter:invert(100%);
+            
+        }
+        .left div{
+            line-height: 0px;
+            font-size: 11px;
+            text-align: center;
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 18px  auto;
+            /* border: 2px solid red; */
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 18px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            color: grey;
+            text-decoration: underline;
+            padding: 34px 23px;
+        }
+        .btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            align-items: center;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 3px 4px;
+            border: 2px solid rgb(250, 247, 247);
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn :hover{
+            background-color: rgb(19,18,18);
+        }
+        .container{
+            border: 2px solid red;
+            text-align: center;
+            margin: 86px 99px;
+            padding: 22px 22px;
+            width: 33%;
+            display: block;
+            border-radius: 12px;            
+        }
+        .formgroup input{
+            /* align-items: center; */
+            text-align: center;
+            display: block;
+            width: 340px;
+            padding: 6px;
+            border-radius: 12px;
+            border: 2px solid black;
+            margin: 3px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left is for logo -->
+        <div class="left">
+            <div>nitesh</div>
+            <img src="img/gym_logo.png" alt="error">
+            <div>fitness</div>
+        </div>
+        <!-- right is for navbar -->
+        <div class="mid">
+            <ul class="navbar" >
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right is for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button> <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of India now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name=""placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name=""placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name=""placeholder="Enter your gender">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
